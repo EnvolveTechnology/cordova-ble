@@ -1242,9 +1242,7 @@ static int EVOPerhiperalAssociatedObjectKey = 42;
 	self.central = [[CBCentralManager alloc]
 		initWithDelegate: self
 		queue: nil
-		options: @{
-			CBCentralManagerOptionRestoreIdentifierKey: @"EVOCentralManagerIdentifier",
-			CBCentralManagerOptionShowPowerAlertKey: @YES }];
+		options: @{CBCentralManagerOptionShowPowerAlertKey: @YES }];
 
 	self.peripherals = [NSMutableDictionary dictionary];
 
